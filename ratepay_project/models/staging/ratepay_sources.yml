@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: ratepay_raw_data
+    schema: public
+    tables: 
+     - name: ratepay_table
+       columns: 
+        - name: customer_id
+          tests: 
+           - unique
+           - not_null
