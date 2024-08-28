@@ -1,8 +1,8 @@
 run_dagster_definitions:
-	dagster dev -f ratepay_project/ratepay/definitions.py
+	cd ratepay_project/ratepay_dagster && dagster dev -f definitions.py
 
 run_dagster_assets:
-	dagster dev -f ratepay_project/ratepay/assets.py
+	cd ratepay_project/ratepay_dagster && dagster dev -f assets.py
 
 
 
